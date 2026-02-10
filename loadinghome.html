@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #dc3545;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 30px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 24px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        @media (min-width: 768px) {
+            .spinner {
+                width: 100px;
+                height: 100px;
+            }
+            .loading-text {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script>
+        // Redirect to confirmation page after 2 seconds
+        setTimeout(function() {
+            window.location.href = 'confirmationhome.html';
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="spinner"></div>
+    <p class="loading-text">Processing Deposit</p>
+</body>
+</html>

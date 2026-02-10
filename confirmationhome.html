@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Relief Confirmation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+                letter-spacing: 2px;
+            }
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .success-box {
+            background-color: #c3c49b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #6b8e23;
+        }
+
+        .checkmark {
+            color: #28a745;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .checkmark {
+                font-size: 50px;
+            }
+        }
+
+        .success-text {
+            color: #4a5a3a;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .success-text {
+                font-size: 22px;
+            }
+        }
+
+        .success-subtitle {
+            color: #4a5a3a;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .success-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        .summary-box {
+            background-color: #e0e0e0;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 6px solid #007bff;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .summary-detail {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .summary-balance {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .summary-title {
+                font-size: 20px;
+            }
+            .summary-detail,
+            .summary-balance {
+                font-size: 18px;
+            }
+        }
+
+        .steps-box {
+            background-color: #f8d7da;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 6px solid #dc3545;
+        }
+
+        .steps-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .steps-list {
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .steps-list li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .steps-title {
+                font-size: 20px;
+            }
+            .steps-list li {
+                font-size: 16px;
+            }
+        }
+
+        .footer-section {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .footer-message {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .footer-email {
+            font-size: 14px;
+            color: #dc3545;
+            font-weight: 500;
+        }
+
+        @media (min-width: 768px) {
+            .footer-title {
+                font-size: 18px;
+            }
+            .footer-message,
+            .footer-email {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>EMERGENCY FUNDS CONFIRMATION</h1>
+    </div>
+
+    <div class="content">
+        <div class="success-box">
+            <div class="checkmark">✓</div>
+            <p class="success-text">The funds were successfully deposited</p>
+            <p class="success-subtitle">The changes have been applied to your account.</p>
+        </div>
+        
+        <div class="summary-box">
+            <p class="summary-title">Equity Cash Out Summary:</p>
+            <p class="summary-detail"><strong>Chase Debit Card:</strong> $303,817.91 has been deposited</p>
+        </div>
+        
+        <div class="steps-box">
+            <p class="steps-title">Next Steps:</p>
+            <ul class="steps-list">
+                <li>Please check your debit card balance within 24-48 hours to confirm the changes have been processed.</li>
+                <li>You may receive a confirmation letter from your card issuer within the next 7-10 business days.</li>
+                <li>No further action is required on your part.</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <p class="footer-title">Have Questions?</p>
+            <p class="footer-message">If you have any questions or concerns, please reach out to our support team: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfdcdeccd7d0cacbcccacfcfd0cdcbffd8d2ded6d391d0
